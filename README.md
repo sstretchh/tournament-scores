@@ -8,6 +8,20 @@ Built for the **Seneca Valley Lacrosse Association (SVLA)** and its **Pumpkin Cl
 
 ---
 
+## Screenshots
+
+Phone-sized views with sample scores.
+
+| Parents: schedule | Parents: standings |
+|:--:|:--:|
+| <img src="docs/screenshots/parent-schedule.png" width="300" alt="Parent schedule and scores view"> | <img src="docs/screenshots/parent-standings.png" width="300" alt="Parent standings view"> |
+
+| Staff: scores | Staff: enter a score | Staff: edit schedule |
+|:--:|:--:|:--:|
+| <img src="docs/screenshots/staff-scores.png" width="250" alt="Staff scores list"> | <img src="docs/screenshots/staff-score-entry.png" width="250" alt="Score entry sheet"> | <img src="docs/screenshots/staff-edit-schedule.png" width="250" alt="Edit schedule tab"> |
+
+---
+
 ## Why this exists
 
 Tournament day is chaotic. Parents wander between fields asking "who's playing now, and what was the score?" Paper schedules go stale the moment a game moves, a team drops out, or a field changes. This project gives families one link that is always current, and gives the volunteers running the event a simple tool that doesn't need an IT person standing next to them.
