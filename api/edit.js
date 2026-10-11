@@ -138,6 +138,15 @@ function perform(edits, body, state) {
       return;
     }
 
+    case 'deleteTeam': {
+      const code = body.code;
+      if (!eff.teams[code]) bad('Unknown team.');
+      if (TEAMS[code]) bad('Original teams cannot be deleted. Use "Team withdrew" to cancel their games, or rename the team.');
+      if (eff.games.some((g) => g.a === code || g.b === code)) bad('This team is in a game. Move or delete those games first.');
+      delete edits.teams[code];
+      return;
+    }
+
     case 'cancelTeam': {
       const code = body.code;
       if (!eff.teams[code]) bad('Unknown team.');

@@ -369,7 +369,12 @@ function openTeam(mode, key) {
   $('#t-err').textContent = '';
   withdraw.textContent = 'Team withdrew – cancel all their games';
   delete withdraw.dataset.orig;
+  const del = $('#t-delete');
+  del.hidden = true;
+  del.textContent = 'Delete this team';
+  delete del.dataset.orig;
   if (mode === 'rename') {
+    del.hidden = !!base.teams[key]; // only teams added here can be deleted
     $('#t-title').textContent = 'Edit team';
     $('#t-sub').textContent = `${sched.teams[key]} (${key})`;
     $('#t-name').value = sched.teams[key];
@@ -393,6 +398,10 @@ $('#t-form').addEventListener('submit', (e) => {
     ? { type: 'team', code: teamMode.key, name }
     : { type: 'addTeam', div: teamMode.key, name };
   submitEdit(body, td, $('#t-err'), $('#t-save'));
+});
+$('#t-delete').addEventListener('click', (e) => {
+  if (!confirmTap(e.currentTarget, 't-delete', 'Tap again to delete this team')) return;
+  submitEdit({ type: 'deleteTeam', code: teamMode.key }, td, $('#t-err'), $('#t-save'));
 });
 $('#t-withdraw').addEventListener('click', (e) => {
   if (!confirmTap(e.currentTarget, 't-withdraw', 'Tap again to cancel their games')) return;
