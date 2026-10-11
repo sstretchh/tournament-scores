@@ -114,7 +114,7 @@ export function gameCard(g, sched, scores, { team = '', editable = false, schedE
   const pill = g.cancelled
     ? '<span class="pill cancelled">Cancelled</span>'
     : status === 'live'
-      ? '<span class="pill live">\u25cf Live</span>'
+      ? '<span class="pill live">In progress</span>'
       : final ? '<span class="pill final">Final</span>'
         : `<span class="pill up">${esc(sched.slots[g.slot])}</span>`;
   const pts = (v) => (s ? v : '\u2013');

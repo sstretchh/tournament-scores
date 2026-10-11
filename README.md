@@ -1,6 +1,6 @@
-# Tournament Live Score Hub
+# Tournament Score Hub
 
-A free, mobile-first live scoreboard for youth sports tournaments. Parents open one link on their phone and see the schedule, live scores and standings all day. Tournament staff sign in on their own phones to enter scores, and they can fix the schedule themselves when something changes.
+A free, mobile-first scoreboard for youth sports tournaments. Parents open one link on their phone and see the schedule, scores and standings all day. Tournament staff sign in on their own phones to enter scores, and they can fix the schedule themselves when something changes.
 
 Built for the **Seneca Valley Lacrosse Association (SVLA)** and its **Pumpkin Classic Showcase** (4 turf fields, Varsity and JV brackets, 34 games in one day). Nothing in it is specific to lacrosse, so it works for any round-robin or showcase-style event: soccer, field hockey, basketball, baseball and so on.
 
@@ -39,7 +39,7 @@ Tournament day is chaotic. Parents wander between fields asking "who's playing n
 
 ### For parents (`/`)
 
-- **Schedule & Scores:** every game grouped by time slot, with live and final scores, a "Now / Up next" badge on event day, and winners highlighted.
+- **Schedule & Scores:** every game grouped by time slot, with in-progress and final scores, a "Now / Up next" badge on event day, and winners highlighted.
 - **Filters:** by division, by team (remembered on the device), and by field.
 - **Standings:** wins-losses-ties, goals for/against and goal differential per division. Only final scores count, and cancelled games are ignored.
 - **Auto-refresh:** updates itself every 30 seconds, and again when the phone wakes up. No manual reload.
@@ -51,7 +51,7 @@ Tournament day is chaotic. Parents wander between fields asking "who's playing n
 Passcode-protected. Three tabs:
 
 - **Scores**
-  - Large `+` / `−` steppers for each team, plus a Not started / Live / Final status.
+  - Large `+` / `−` steppers for each team, plus a Not started / In progress / Final status.
   - "My field" filter, so a scorekeeper sees only the games they are responsible for.
   - "Hide finished" to keep the list short as the day goes on.
 - **Standings:** the same tables parents see, without signing out.

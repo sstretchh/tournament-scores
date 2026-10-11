@@ -137,7 +137,7 @@ function render() {
   const finals = active.filter((g) => state.scores[g.id]?.status === 'final').length;
   const live = active.filter((g) => state.scores[g.id]?.status === 'live').length;
   const cancelled = sched.games.length - active.length;
-  $('#count').textContent = `${finals} final · ${live} live · ${active.length - finals - live} to go${cancelled ? ` · ${cancelled} cancelled` : ''}`;
+  $('#count').textContent = `${finals} final · ${live} in progress · ${active.length - finals - live} to go${cancelled ? ` · ${cancelled} cancelled` : ''}`;
   const changed = timeAgo(state.updatedAt);
   $('#status').innerHTML = `<span><span class="live-dot"></span>${changed ? `Last update ${esc(changed)}` : 'No scores entered yet'}</span><span>Auto-refreshes every 20 seconds</span>`;
 

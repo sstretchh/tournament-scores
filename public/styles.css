@@ -76,9 +76,7 @@ button { cursor: pointer; }
 .filter-label { font-size: 13px; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
 
 .status-line { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin: 12px 0 4px; font-size: 14px; color: var(--muted); }
-.live-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--pumpkin-deep); margin-right: 6px; animation: pulse 1.6s infinite; }
-@keyframes pulse { 50% { opacity: 0.25; } }
-@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
+.live-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--pumpkin-deep); margin-right: 6px; }
 
 /* Time slots and game cards */
 .slot { margin-top: 20px; }
